@@ -58,7 +58,7 @@ public:
 					BSTR request,response;
 					request = SysAllocString(L"<invoke name=\"setButtonText\" returntype=\"xml\"><arguments><string>Click me!</string></arguments></invoke>");
 					response = SysAllocString(L"");
-					pFlashUI->m_pFlash->CallFunction(request, &response);
+					pFlash->CallFunction(request, &response);
 					SysFreeString(request);
 					SysFreeString(response);
 				}
